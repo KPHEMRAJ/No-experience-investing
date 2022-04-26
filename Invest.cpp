@@ -1,4 +1,4 @@
-/* Currently webpage not ready plz use external compiler
+/* 
 pe=Current month pe ratio
 amt= Desired amount to invest 
 gs= gold shortage (initially 0)
