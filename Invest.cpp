@@ -12,9 +12,9 @@ gp=cmp of goldbees
 using namespace std;
 #define ll long long
 int main()
-{ ios_base::sync_with_stdio(0);
+{ /*ios_base::sync_with_stdio(0);
 	cin.tie(0);
-	cout.tie(0);
+	cout.tie(0);*/
 float pe,amt,gs,ns,n,g;
 int np,gp;
 cout<<"Enter nifty 50 PE ratio\n";
