@@ -15,7 +15,7 @@ int main()
 { /*ios_base::sync_with_stdio(0);
 	cin.tie(0);
 	cout.tie(0);*/
-float pe,amt,gs,ns,n,g;
+float pe,amt,gs,ns,n,g,npf,gpf;
 int np,gp;
 cout<<"Enter nifty 50 PE ratio\n";
 cout<<"refer(https://www1.nseindia.com/products/content/equities/indices/historical_pepb.htm)\n";
@@ -30,9 +30,11 @@ else
 	n=3*amt/5;
 g=(amt-n)/3;
 cout<<"Enter the current market price of nifty bees\n";
-cin>>np;
+cin>>npf;
 cout<<"Enter the current market price of gold bees\n";
-cin>>gp;
+cin>>gpf;
+	np=(int)npf;
+	gp=(int)gpf;
 cout<<"Number of nifty units to buy="<<(int)(n/np)<<'\n';
 cout<<"Number of gold units to buy="<<(int)(g/gp)<<'\n';
 float left=amt-((int)(g/gp)*gp)-((int)(n/np)*np);
