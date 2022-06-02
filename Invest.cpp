@@ -42,7 +42,7 @@ cin>>gpf;
 	gp=(int)gpf;
 cout<<"Number of nifty units to buy="<<(int)(n/npf)<<'\n';
 cout<<"Number of gold units to buy="<<(int)(g/gpf)<<'\n';
-float left=amt-((int)(g/gpf)*gpf)-((int)(n/npf)*npf)-3;
+float left=amt-((int)(g/gpf)*gpf)-((int)(n/npf)*npf)-3.5;
 cout<<"Amount to be invested in corporate bond="<<left/3<<'\n';
 cout<<"Amount to be invested in savings bond="<<left/3<<'\n';
 cout<<"Amount to be invested in credit risk bond="<<left/3<<'\n';
