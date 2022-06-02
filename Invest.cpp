@@ -7,10 +7,10 @@ n= nifty
 g= gold
 np= cmp of niftybees
 gp=cmp of goldbees
+nsp,gsp= nifty surplus and gold surplus from previous month
 */
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
-#define ll long long
 int main()
 { /*ios_base::sync_with_stdio(0);
 	cin.tie(0);
@@ -28,7 +28,14 @@ else if(pe<=22.5&&pe>=17)
 	n=2*amt/5;
 else
 	n=3*amt/5;
+	float nsp,gsp;
+	cout<<"Enter Nifty Surplus(from last month's data, if not found just enter 0)"<<'\n';
+	cin>>nsp;
+	n+=nsp;
 g=(amt-n)/3;
+	cout<<"Enter Gold Surplus(from last month's data, if not found just enter 0)"<<'\n';
+	cin>>gsp;
+	g+=gsp;
 cout<<"Enter the current market price of nifty bees\n";
 cin>>npf;
 cout<<"Enter the current market price of gold bees\n";
