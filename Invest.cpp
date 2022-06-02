@@ -7,14 +7,12 @@ n= nifty
 g= gold
 np= cmp of niftybees
 gp=cmp of goldbees
-nsp,gsp= nifty surplus and gold surplus from previous month
+nsp,gsp= nifty shortage and gold shortage from previous month
 */
 #include<iostream>
 using namespace std;
 int main()
-{ /*ios_base::sync_with_stdio(0);
-	cin.tie(0);
-	cout.tie(0);*/
+{ 
 float pe,amt,gs,ns,n,g,npf,gpf;
 int np,gp;
 cout<<"Enter nifty 50 PE ratio\n";
@@ -29,16 +27,16 @@ else if(pe<=22.5&&pe>=17)
 else
 	n=3*amt/5;
 	float nsp,gsp;
-	cout<<"Enter Nifty Surplus(from last month's data, if not found just enter 0)"<<'\n';
+	cout<<"Enter Nifty Shortage(from last month's data, if not found just enter 0)"<<'\n';
 	cin>>nsp;
 	n+=nsp;
 g=(amt-n)/3;
-	cout<<"Enter Gold Surplus(from last month's data, if not found just enter 0)"<<'\n';
+	cout<<"Enter Gold Shortage(from last month's data, if not found just enter 0)"<<'\n';
 	cin>>gsp;
 	g+=gsp;
 cout<<"Enter the current market price of nifty bees\n";
 cin>>npf;
-cout<<"Enter the current market price of gold bees\n";
+cout<<"Enter the current market price of gold etf(ICICI)\n";
 cin>>gpf;
 	np=(int)npf;
 	gp=(int)gpf;
